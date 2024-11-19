@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#D58E3C">
+
+    <title>Order your cosmic pizza!</title>
+    <link rel="stylesheet" href="pizzastyle.css">
+    <link rel="shortcut icon" href="c:\Users\shurt\Desktop\HTML\oasis pizza delivery\favicon img1.png" type="image/png" sizes="192x192">
+    <link rel="stylesheet" href="pizzasresponsive.css">
+</head>
+
+<body>
+
+    <header>C<img src="c:\Users\shurt\Desktop\HTML\oasis pizza delivery\logo img 2.png" id="logo-img">smic Pizzas</header>
+
+    <div class="grid-container">
+        <!-- THE PIZZA -->
+        <div class="grid-child pizza-container">
+            <div class="pizza-title">CUSTOMIZE YOUR PIZZA!</div>
+            <div class="pizza-image">
+                <img src="c:\Users\shurt\Desktop\HTML\oasis pizza delivery\margherita img3.png" id="the-pizza">
+                <img src="c:\Users\shurt\Desktop\HTML\oasis pizza delivery\peri-peri-chicken img4.png" class="topping-image" id="peri-peri-chicken">
+                <img src="c:\Users\shurt\Desktop\HTML\oasis pizza delivery\barbeque img5.png" class="topping-image" id="barbeque">
+                <img src="c:\Users\shurt\Desktop\HTML\oasis pizza delivery\chicken-sausage img6.png" class="topping-image" id="sausage">
+                <img src="c:\Users\shurt\Desktop\HTML\oasis pizza delivery\chicken-tikka img7.png" class="topping-image" id="chicken-tikka">
+                <img src="c:\Users\shurt\Desktop\HTML\oasis pizza delivery\grilled-chicken-rasher img8.png" class="topping-image" id="grilled-chicken-rasher">
+                <img src="c:\Users\shurt\Desktop\HTML\oasis pizza delivery\capsicum img9.png" class="topping-image" id="capsicum">
+                <img src="c:\Users\shurt\Desktop\HTML\oasis pizza delivery\mushroom img10.png" class="topping-image" id="mushroom">
+                <img src="c:\Users\shurt\Desktop\HTML\oasis pizza delivery\onion img11.png" class="topping-image" id="onion">
+                <img src="c:\Users\shurt\Desktop\HTML\oasis pizza delivery\paneer 12.png" class="topping-image" id="paneer">
+                <img src="c:\Users\shurt\Desktop\HTML\oasis pizza delivery\paparika 13.png" class="topping-image" id="paparika">
+                <img src="c:\Users\shurt\Desktop\HTML\oasis pizza delivery\jalapeno 14.png" class="topping-image" id="jalapeno">
+                <img src="c:\Users\shurt\Desktop\HTML\oasis pizza delivery\greenOlives 15.png" class="topping-image" id="green-olives">
+                <img src="c:\Users\shurt\Desktop\HTML\oasis pizza delivery\goldenCorn 16.png" class="topping-image" id="golden-corn">
+            </div>
+            <div class="pizza-caption">A classic delight loaded with extra 100% real mozzarella cheese.</div>
+        </div>
+        <!-- THE TOPPINGS -->
+        <div class="grid-child toppings-container">
+            <div class="toppings-head">ADD TOPPINGS</div>
+            <div class="toppings-genres">
+                <div class="toppings-genre active" onclick="openGenre(event, 'veg')">VEG</div>
+                <div class="toppings-genre" onclick="openGenre(event, 'non')">NON VEG</div>
+            </div>
+            <div class="toppings-body">
+                <div class="toppings-body-veg toppings-body-child active-genre">
+                    <div class="topping" title="₹13">
+                        <img src="c:\Users\shurt\Desktop\HTML\oasis pizza delivery\Mushroom thumb1.png" alt="" srcset="">
+                        <span>MUSHROOM</span>
+                    </div>
+                    <div class="topping" title="₹30">
+                        <img src="c:\Users\shurt\Desktop\HTML\oasis pizza delivery\Onion thumb2.png" alt="" srcset="">
+                        <span>ONION</span>
+                    </div>
+                    <div class="topping" title="₹45">
+                        <img src="c:\Users\shurt\Desktop\HTML\oasis pizza delivery\Paneer thunb3.png" alt="" srcset="">
+                        <span>PANEER</span>
+                    </div>
+                    <div class="topping" title="₹23">
+                        <img src="c:\Users\shurt\Desktop\HTML\oasis pizza delivery\Paparika thumb4.png" alt="" srcset="">
+                        <span>PAPARIKA</span>
+                    </div>
+                    <div class="topping" title="₹23">
+                        <img src="c:\Users\shurt\Desktop\HTML\oasis pizza delivery\Jalapeno thumb5.png" alt="" srcset="">
+                        <span>JALAPENO</span>
+                    </div>
+                    <div class="topping" title="₹67">
+                        <img src="c:\Users\shurt\Desktop\HTML\oasis pizza delivery\Olives thumb6.png" alt="" srcset="">
+                        <span>GREEN OLIVES</span>
+                    </div>
+                    <div class="topping" title="₹34">
+                        <img src="c:\Users\shurt\Desktop\HTML\oasis pizza delivery\GoldenCorn thumb7.png" alt="" srcset="">
+                        <span>GOLDEN CORN</span>
+                    </div>
+                    <div class="topping" title="₹45">
+                        <img src="c:\Users\shurt\Desktop\HTML\oasis pizza delivery\Capsicum thumb8.png" alt="" srcset="">
+                        <span>CAPSICUM</span>
+                    </div>
+                </div>
+                <div class="toppings-body-non toppings-body-child">
+                    <div class="topping" title="₹34">
+                        <img src="c:\Users\shurt\Desktop\HTML\oasis pizza delivery\non veg thumbnails\PeriPeriChicken nv 1.png" alt="" srcset="">
+                        <span>PERI PERI CHICKEN</span>
+                    </div>
+                    <div class="topping" title="₹56">
+                        <img src="c:\Users\shurt\Desktop\HTML\oasis pizza delivery\non veg thumbnails\Barbeque nv2.png" alt="" srcset="">
+                        <span>BARBEQUE</span>
+                    </div>
+                    <div class="topping" title="₹23">
+                        <img src="c:\Users\shurt\Desktop\HTML\oasis pizza delivery\non veg thumbnails\ChickenSausage nv3.png" alt="" srcset="">
+                        <span>SAUSAGE</span>
+                    </div>
+                    <div class="topping" title="₹76">
+                        <img src="c:\Users\shurt\Desktop\HTML\oasis pizza delivery\non veg thumbnails\ChickenTikka nv4.png" alt="" srcset="">
+                        <span>CHICKEN TIKKA</span>
+                    </div>
+                    <div class="topping" title="₹23">
+                        <img src="c:\Users\shurt\Desktop\HTML\oasis pizza delivery\non veg thumbnails\GrilledChickenRasher nv5.png" alt="" srcset="">
+                        <span>GRILLED CHICKEN RASHER</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- THE CRUSTS -->
+        <div class="grid-child crust-container">
+            <div class="crust-head">CHOOSE YOUR CRUST</div>
+            <div class="crust-body">
+                <div class="crust selected-crust" title="₹34">CLASSIC HAND TOSSED</div>
+                <div class="crust" title="₹23">CHEESE BURST</div>
+                <div class="crust" title="₹43">WHEAT THIN CRUST</div>
+                <div class="crust" title="₹34">FRESH PAN</div>
+                <div class="crust" title="₹43">NEW HAND TOSSED</div>
+            </div>
+        </div>
+        <!-- THE MONEY 💲💲💲 -->
+        <div class="grid-child bill-container">
+            <div class="bill-extras">
+                <span>Quantity</span>
+                <select name="quantity" id="quantity" onclick="updateBill()">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <label for="extra-cheese" class="cheese" title="₹15">Extra Cheese
+                    <input type="checkbox" name="extra-cheese" id="extra-cheese" onclick="updateBill()">
+                    <span class="checkmark" title="₹15"></span>
+                </label>
+            </div>
+            <div class="bill">
+                <ul class="bill-list">
+                    <li>
+                        <span class="bill-label">Total:</span>
+                        <span class="bill-value" id="total-cost">₹34</span>
+                    </li>
+                    <li>
+                        <span class="bill-label">Extra Toppings:</span>
+                        <span class="bill-value" id="toppings-cost">₹0</span>
+                    </li>
+                    <li>
+                        <span class="bill-label">Extra Cheese:</span>
+                        <span class="bill-value" id="cheese-cost">₹0</span>
+                    </li>
+                    <li>
+                        <span class="bill-label">GST:</span>
+                        <span class="bill-value" id="gst-cost">₹0</span>
+                    </li>
+                    <li id="grand-total">
+                        <span class="bill-label">Grand Total:</span>
+                        <span class="bill-value" id="grand-cost">₹34</span>
+                    </li>
+                </ul>
+                <div id="buy-now">
+                    <a><span>Buy Now</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup">
+        <p id="close">×</p>
+        <h2>Buy now</h2>
+        <p>Enter Delivery Address</p>
+        <textarea cols="1" rows="8"></textarea>
+        <button id="confirm-btn">Confirm Purchase</button>
+    </div>
+
+    <script src="pizzaapp.js"></script>
+
+</body>
+
+</html>
